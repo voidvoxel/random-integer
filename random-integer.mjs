@@ -1,3 +1,14 @@
+/**
+ * Generate a random integer within the range of `x` and `y`.
+ * @param {number?} x
+ * If only `x` is provided, then `x` is the `max` value.
+ * If both `x` and `y` are provided, then `x` is the `min` value.
+ * @param {*} y
+ * The `max` value.
+ * If `y` is not provided, then `x` is the `max` value and `y` is ignored.
+ * @returns
+ * A random integer where `min <= value <= max`.
+ */
 export default function randomInteger (
     x = Infinity,
     y = null
