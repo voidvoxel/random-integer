@@ -1,7 +1,7 @@
 {
     "name": "@voidvoxel/random-integer",
     "version": "1.0.0",
-    "description": "Inject headers, footers, and wrappers into JavaScript source code",
+    "description": "Generate random integers",
     "main": "random-integer.mjs",
     "type": "module",
     "scripts": {
