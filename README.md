@@ -1,2 +1,3 @@
-# random-integer
- Generate random integers
+# `@voidvoxel/random-integer`
+
+Generate random integers
