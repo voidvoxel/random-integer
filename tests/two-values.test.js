@@ -48,6 +48,7 @@ testRange(0, 1);
 testRange(0, Infinity);
 testRange(-Infinity, 0);
 testRange(-Infinity, Infinity);
+testRange(Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
 
 // Corner cases
 testRange(0, -1);
@@ -55,6 +56,9 @@ testRange(1, 0);
 testRange(Infinity, 0);
 testRange(0, -Infinity);
 testRange(Infinity, -Infinity);
+testRange(Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER);
+testRange(-Number.MIN_SAFE_INTEGER, -Number.MAX_SAFE_INTEGER);
+testRange(-Number.MAX_SAFE_INTEGER, -Number.MIN_SAFE_INTEGER);
 // CURSED: For some reason, `-1` is being passed as `undefined` here.
 //         This may be a bug within `jest`.
 // testRange(1 -1);
